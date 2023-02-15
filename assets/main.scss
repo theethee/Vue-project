@@ -1,0 +1,60 @@
+
+$font: sans-serif;
+$position-h1: center;
+$position-padding-left: 5%;
+$img-width: 110px;
+$img-height: 130px;
+$img-equal-sizes: fill;
+$center-footer: center;
+$margin-footer: 5%;
+$brand: bolder;
+$brand-color:rgba(32, 100, 9, 0.212);
+$center-txt: center;
+$hide: none;
+$space-btn: 5px;
+
+
+.space{
+padding-top: $space-btn;
+}
+
+#brand{
+font-weight: $brand;
+color: $brand-color;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+
+h2,h3{
+text-align: $center-txt;
+}
+
+h1,p,a,h2,h4, h3{
+  font-family: $font;
+}
+
+h1{
+text-align:$position-h1
+}
+
+.row{
+padding-left:$position-padding-left;
+}
+
+img{
+width: $img-width;
+height: $img-height;
+object-fit: $img-equal-sizes;
+}
+
+p{
+text-align: $center-footer;
+
+}
+
+footer{
+  margin-top: $margin-footer;
+}
+
+
+
+@import 'bootstrap/scss/bootstrap';
