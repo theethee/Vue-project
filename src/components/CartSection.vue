@@ -91,6 +91,11 @@
 </script>
 
 <style lang="scss" scoped>
+  $product-title: bold;
+
+  #title {
+    font-weight: $product-title;
+  }
   #price {
     padding-bottom: 10%;
   }
