@@ -1,4 +1,16 @@
-# A Vue.js template for Vite
+# A Vue.js project
 
-This is a school project that we had about one week to complete.
-Requirements for this project was to use a API (with at least ten values), text interpolation, attribute interpolation, conditional rendering, list rendering, events, v-model, router-link and routerview, at least one none Vue-Router component, prop and some style with Sass.
+**This is a school project that we had about one week to complete.**
+
+## Requirements:
+
+-Use a API (with at least ten values).<br>
+-Text interpolation.<br>
+-Attribute interpolation.<br>
+-Conditional rendering.<br>
+-List rendering.<br>
+-Events.<br>
+-V-model.<br>
+-Router-link and routerview.<br>
+-At least one none Vue-Router component.<br>
+-Prop and some style with Sass.<br>
