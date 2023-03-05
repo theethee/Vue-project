@@ -86,6 +86,12 @@
 </script>
 
 <style lang="scss" scoped>
+  $product-title: bold;
+
+  #title {
+    font-weight: $product-title;
+  }
+
   #center-div {
     display: flex;
     justify-content: center;

@@ -3,11 +3,13 @@
 <script>
   import NavbarSection from "./components/NavbarSection.vue"
   import FooterSection from "./components/FooterSection.vue"
+  import HomeView from "./views/HomeView.vue"
 
   export default {
     components: {
       NavbarSection,
-      FooterSection
+      FooterSection,
+      HomeView
     }
   }
 </script>
@@ -21,5 +23,6 @@
 
 <template>
   <NavbarSection />
+  <HomeView></HomeView>
   <FooterSection />
 </template>

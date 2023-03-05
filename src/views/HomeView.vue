@@ -2,7 +2,7 @@
   export default {}
 </script>
 
-<style>
+<style type="scss" scoped>
   li {
     font-weight: bold;
   }
@@ -17,6 +17,7 @@
 </style>
 
 <template>
+  <!-- <h1>test</h1> -->
   <div id="pic-and-h1">
     <!-- <img src="..../assets/HomePic.jpg" /> -->
   </div>
