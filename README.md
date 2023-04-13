@@ -15,5 +15,9 @@
 -At least one none Vue-Router component.<br>
 -Prop and some style with Sass.<br>
 
+### Comments:
+
+This webbpage is not responsive.
+
 ### Github pages:
 https://theethee.github.io/#/
