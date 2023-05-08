@@ -14,6 +14,7 @@
   }
 </script>
 
+<!-- Formulär utan funktion. Ej hunnit med -->
 <template>
   <form class="container">
     <label>First name: *</label>
