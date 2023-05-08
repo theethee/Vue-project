@@ -3,11 +3,13 @@
 <template>
   <h2>Cart</h2>
 
+  <!-- Skriver ut hur mpnga produkter som finns i varukorgen -->
   <h3>{{ cart.length }} in cart</h3>
   <div class="2-columns">
     <h3>All products</h3>
   </div>
   <div class="row" id="fixed">
+    <!-- Visar alla produkter med produkinfo -->
     <div id="products-div" :key="product.id" v-for="product in products">
       <div class="column">
         <div id="title" class="column">{{ product.title }}</div>
@@ -16,6 +18,7 @@
       <div id="price" class="column">${{ product.price }}</div>
       <div>
         <div class="space">
+          <!-- lägger till produkt i varukorg -->
           <input
             class="btn btn-light"
             value="Add to cart"
@@ -24,6 +27,7 @@
           />
         </div>
         <div class="space">
+          <!-- tar bort produkt i varukorg -->
           <input
             class="btn btn-light"
             value="remove"
@@ -31,15 +35,6 @@
             type="button"
           />
         </div>
-
-        <!-- <div class="space">
-          <input
-            class="btn btn-light"
-            value="remove"
-            @click="removeProduct(product)"
-            type="button"
-          />
-        </div> -->
       </div>
     </div>
   </div>
@@ -47,14 +42,7 @@
 
 <script>
   export default {
-    computed: {
-      // add() {
-      //   return this.$store.state.add
-      // },
-      // remove() {
-      //   return this.$store.state.remove
-      // }
-    },
+    computed: {},
 
     data() {
       return {
