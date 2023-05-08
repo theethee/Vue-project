@@ -76,6 +76,7 @@
     },
 
     methods: {
+      // Lyssnar på vilken kategori användaren väljer i rullgardinsmenyn
       navigateToProduct(e) {
         this.$router.push("/" + e.target.value)
       }
@@ -108,6 +109,7 @@
         <RouterLink to="/checkout">Checkout</RouterLink>
       </li>
     </ul>
+    <!-- rullgardinsmeny -->
     <select
       name="format"
       id="format"
@@ -122,6 +124,7 @@
     </select>
   </nav>
 
+  <!-- Visar och döljer brand name -->
   <div class="brand">
     <h1 v-if="showBrand" id="brand">Threads & Textures</h1>
     <button @click="showBrand = !showBrand" type="submit">
