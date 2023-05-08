@@ -2,19 +2,25 @@
 
 <template>
   <header id="center-div">
+    <!-- Visar hur mycket som lagts till i cart -->
     <h3>{{ cart.length }} in cart</h3>
   </header>
 
   <div class="row">
+    <!-- loopar i products arrayen -->
     <div id="products-div" :key="product.id" v-for="product in products">
       <div class="column">
+        <!-- visar titel på produkt -->
         <div id="title" class="column">{{ product.title }}</div>
         <div id="pic">
+          <!-- visar bild på produkt -->
           <img :src="product.image" alt="Picture of the product" />
         </div>
       </div>
+      <!-- visar priset på produkt -->
       <div id="price" class="column">${{ product.price }}</div>
       <div class="space">
+        <!-- Lägger till produkt i varukorgen -->
         <input
           class="btn btn-light"
           value="Add to cart"
@@ -22,15 +28,6 @@
           type="button"
         />
       </div>
-      <!-- <div class="space">
-        <input
-          class="btn btn-light"
-          value="remove"
-          @click="removeProduct(product)"
-          type="button"
-        />
-      </div> -->
-      <!-- <input value="Add to cart" @click="addToCart" type="button" /> -->
     </div>
   </div>
   <!-- </div> -->
