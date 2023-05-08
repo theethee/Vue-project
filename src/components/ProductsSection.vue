@@ -35,39 +35,42 @@
 
 <script>
   export default {
-    computed: {
-      // add() {
-      //   return this.$store.state.add
-      // }
-    },
+    computed: {},
 
     data() {
       return {
+        // returnerar objekt
         cart: [],
         products: null
       }
     },
 
     created() {
+      // anropar metod
       this.fetchProducts()
     },
 
     methods: {
       fetchProducts() {
         // console.log(this.category)
+        // fetchar API och hämtar produkt baserat på kategori
         fetch(`https://fakestoreapi.com/products/category/${this.category}`)
+          // omvandlas till JSON
           .then((response) => response.json())
           .then((result) => {
             this.products = result
             // console.log(result)
           })
       },
+      // Lägger till produkt i varukorgen
       addToCart(product) {
         //pushar in i arrayen!
         this.cart.push(product)
         console.log(this.cart)
       },
+      // tar bort senaste produkten från varukorgen
       removeProduct() {
+        // tar bort sista elementet
         this.cart.splice(this.cart.length - 1)
         //  Kan använda Pop
         // this.cart.pop()
