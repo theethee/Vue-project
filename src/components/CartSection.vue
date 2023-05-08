@@ -61,11 +61,13 @@
             this.products = result
           })
       },
+      // Lägger till produkt i varukorgen
       addToCart(product) {
         //pushar in i arrayen!
         this.cart.push(product)
         console.log(this.cart)
       },
+      // tar bort senaste produkten från varukorgen
       removeProduct() {
         this.cart.splice(this.cart.length - 1)
         //  Kan använda Pop
