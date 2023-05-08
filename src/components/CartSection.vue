@@ -54,6 +54,7 @@
       this.fetchProducts()
     },
     methods: {
+      // fetchar produkter från API
       fetchProducts() {
         fetch("https://fakestoreapi.com/products")
           .then((response) => response.json())
